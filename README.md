@@ -1,7 +1,7 @@
 # Azure Infrastructure Guide
 
 > A curated, practitioner-maintained guide to building production-ready Azure infrastructure with Terraform.
-> Covers breaking changes, compliance frameworks, and security best practices.
+> Covers breaking changes, compliance frameworks, security best practices, and architecture patterns.
 
 [![Azure](https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 [![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)](https://www.terraform.io)
@@ -32,7 +32,35 @@ Critical changes every Azure architect must know about:
 Infrastructure-level mapping for EU regulations and security benchmarks:
 
 - [NIS2 — What Your Azure Infrastructure Must Include](docs/compliance/nis2-azure.md)
+- [DORA — Azure Requirements for Financial Services](docs/compliance/dora-azure.md)
+- [RGPD/GDPR — Infrastructure Controls](docs/compliance/rgpd-azure.md)
 - [MCSB v1 — Quick Reference for Azure Architects](docs/compliance/mcsb-quick-reference.md)
+
+## Terraform Best Practices
+
+Patterns and lessons from building 90+ production stacks:
+
+- [Azure Verified Modules (AVM) — What You Need to Know](docs/terraform/avm-guide.md)
+- [Private Endpoints — The Complete Terraform Guide](docs/terraform/private-endpoints.md)
+- [Checkov on Azure — Getting to 0 Failed Checks](docs/terraform/checkov-azure.md)
+- [AzureRM Provider v4 — What Changed](docs/terraform/azurerm-v4.md)
+
+## Best Practices
+
+Production-ready patterns for common Azure workloads:
+
+- [Security Baseline — Every Stack Needs This](docs/best-practices/security-baseline.md)
+- [Monitoring Baseline — Diagnostic Settings Done Right](docs/best-practices/monitoring-baseline.md)
+- [FinOps — Budget Alerts and Cost Control](docs/best-practices/finops-baseline.md)
+- [CAF Naming Convention — Practical Guide](docs/best-practices/caf-naming.md)
+
+## Architecture Patterns
+
+Reference architectures for common Azure deployments:
+
+- [Hub-Spoke Network](docs/architecture/hub-spoke.md)
+- [App Service + Database](docs/architecture/appservice-database.md)
+- [AKS Platform](docs/architecture/aks-platform.md)
 
 ---
 
@@ -40,7 +68,7 @@ Infrastructure-level mapping for EU regulations and security benchmarks:
 
 **Frédéric Leroy** — Microsoft Certified Trainer, Azure Solutions Architect Expert
 
-Building [AethronOps](https://aethronops.com) — a platform that generates production-ready Azure Terraform stacks with built-in compliance documentation for 10 frameworks.
+Building [AethronOps](https://aethronops.com) — a platform that generates production-ready Azure Terraform stacks with built-in compliance documentation.
 
 ## Contributing
 
